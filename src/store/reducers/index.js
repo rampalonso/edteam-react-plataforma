@@ -1,0 +1,5 @@
+export { default as lessonReducer } from './lesson'
+export { default as courseReducer } from './course'
+export { default as postReducer } from './post'
+export { default as specialityReducer } from './speciality'
+export { default as teacherReducer } from './teacher'
