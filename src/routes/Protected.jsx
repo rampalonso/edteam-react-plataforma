@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Redirect } from "react-router-dom";
 
 const Protected = ({ component, ...args }) => {
-  const loggedIn = true;
+  const loggedIn = false;
 
   if (!loggedIn) {
     return <Redirect to="/login" />;
