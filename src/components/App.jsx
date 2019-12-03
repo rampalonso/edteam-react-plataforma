@@ -5,7 +5,7 @@ import Protected from 'routes/Protected';
 import Public from 'routes/Public';
 
 import { Home, Specialities, Speciality, Courses, Course, Teachers, Lesson, Login, Register, NotFound } from './pages';
-import { Header } from './Organisms';
+import { Header } from './organisms';
 
 
 
