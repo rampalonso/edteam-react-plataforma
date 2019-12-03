@@ -8,7 +8,7 @@ const Protected = ({ component, ...args }) => {
   if (!loggedIn) {
     return <Redirect to="/login" />;
   }
-  return <Route {...args} render={component} />
+  return <Route {...args} component={component} />
 }
 
 export default Protected

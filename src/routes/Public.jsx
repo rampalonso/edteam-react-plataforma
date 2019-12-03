@@ -8,7 +8,7 @@ const Public = ({ component, ...args }) => {
   if (loggedIn) {
     return <Redirect to="/" />;
   }
-  return <Route {...args} render={component} />
+  return <Route {...args} component={component} />
 }
 
 export default Public
