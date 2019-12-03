@@ -2,7 +2,12 @@ import React, { createRef } from 'react'
 import { NavLink } from "react-router-dom";
 
 const menu = createRef();
-const toggleMenu = () => menu.current.classList.toggle('show')
+const toggleMenu = () => menu.current.classList.toggle('show');
+
+const removeToken = () => {
+  localStorage.removeItem('_token');
+  window.location = '/login'
+}
 
 const Header = () => (
   <header className="main-header">
@@ -19,6 +24,7 @@ const Header = () => (
             <li><NavLink to="/especialidades">Especialidades</NavLink></li>
             <li><NavLink to="/cursos">Cursos</NavLink></li>
             <li><NavLink to="/profesores">Profesores</NavLink></li>
+            <li><span onClick={removeToken}>Cerrar sesion</span></li>
           </ul>
         </nav>
         <div

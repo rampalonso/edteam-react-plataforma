@@ -22,7 +22,7 @@ const App = () => (
       <Protected path="/clase/:id" component={Lesson} />
 
       <Public path="/login" exact component={Login} />
-      <Public path="/register" exact component={Register} />
+      <Public path="/registro" exact component={Register} />
 
       <Route component={NotFound} />
     </Switch>
