@@ -3,7 +3,7 @@ import store from 'store';
 import { getAllTeachers } from 'store/actions/teacher';
 import { connect } from "react-redux";
 
-import { Banner } from 'components/organisms';
+import { Banner, Teacher } from 'components/organisms';
 
 const Teachers = ({ match, teachers }) => {
 
@@ -22,26 +22,22 @@ const Teachers = ({ match, teachers }) => {
         title="Nuestros profesores"
         subtitle="Este panel docente esta altamente calificado para guiarte en tu educacion"
       />
-      <main className="ed-grid m-grid-3 lg-grid-4 row-gap">
-        {
-          teachers &&
-          teachers.map(t => {
-            return (
-              <article key={t.id}>
-                <div className="s-px-4">
-                  <div className="image-container circle s-mb-2">
-                    <img src={t.picture} alt={t.name} />
-                  </div>
-                </div>
-                <div className="s-center">
-                  <p className="t3 s-mb-1">{t.name}</p>
-                  <p>{t.country}</p>
-                </div>
-              </article>
-            )
-          })
-        }
-      </main>
+      {
+        teachers &&
+        <main className="ed-grid m-grid-3 lg-grid-4 row-gap">
+          {
+
+            teachers.map(t => {
+              return <Teacher
+                key={t.id}
+                picture={t.picture}
+                name={t.name}
+                country={t.country}
+              />
+            })
+          }
+        </main>
+      }
     </Fragment>
   )
 }

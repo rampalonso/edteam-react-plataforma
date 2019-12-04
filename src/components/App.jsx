@@ -15,7 +15,7 @@ const App = () => (
     <Switch>
       <Protected path="/" exact component={Home} />
       <Protected path="/especialidades" exact component={Specialities} />
-      <Protected path="/especialidaddes/:id" component={Speciality} />
+      <Protected path="/especialidades/:id" component={Speciality} />
       <Protected path="/cursos" exact component={Courses} />
       <Protected path="/cursos/:id" component={Course} />
       <Protected path="/profesores" exact component={Teachers} />
