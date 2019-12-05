@@ -14,7 +14,7 @@ export const getAllSpecialities = () => (dispatch) => {
 }
 
 export const getSpeciality = (id) => (dispatch) => {
-  axios.get(`${env.apiUrl}/especialidades/${id}`).then(response => {
+  axios.get(`${env.apiUrl}/especialidad/${id}`).then(response => {
     return dispatch({
       type: GET_SPECIALITY,
       speciality: response.data
