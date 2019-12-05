@@ -14,7 +14,7 @@ export const getAllCourses = () => (dispatch) => {
 }
 
 export const getCourse = (id) => (dispatch) => {
-  axios.get(`${env.apiUrl}/cursos/${id}`).then(response => {
+  axios.get(`${env.apiUrl}/curso/${id}`).then(response => {
     return dispatch({
       type: GET_COURSE,
       course: response.data

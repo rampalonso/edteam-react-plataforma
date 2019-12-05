@@ -25,6 +25,7 @@ const Home = ({ posts }) => {
         title="Bienvenido a la experiencia mas increible en educacion online. Comienza hoy mismo a aprender"
         subtitle="Nuestro equipo ha desarrollado esta plataforma pensando en ti. Sabemos que estas buscando contenido de calidad. Aqui lo encontraras"
         home
+        poster="https://images.unsplash.com/photo-1575386955427-d82db4af08bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
       />
 
       <main className="ed-grid m-grid-3">
